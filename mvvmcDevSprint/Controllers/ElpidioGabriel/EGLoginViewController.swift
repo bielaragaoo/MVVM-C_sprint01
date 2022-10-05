@@ -61,6 +61,7 @@ class EGLoginViewController: UIViewController {
     }
     
     func didClickLogin() {
+<<<<<<< Updated upstream:mvvmcDevSprint/Controllers/ElpidioGabriel/EGLoginViewController.swift
         if !ConnectivityManager.shared.isConnected {
             let alertController = UIAlertController(title: "Sem conexão", message: "Conecte-se à internet para tentar novamente", preferredStyle: .alert)
             let actin = UIAlertAction(title: "Ok", style: .default)
@@ -96,6 +97,10 @@ class EGLoginViewController: UIViewController {
                 }
             }
         }
+=======
+//        viewModel.isNoConnection()
+        viewModel.isLogged(emailText: emailTextField.text ?? "", passwordText: passwordTextField.text ?? "")
+>>>>>>> Stashed changes:mvvmcDevSprint/Controllers/ElpidioGabriel/Login/EGLoginViewController.swift
     }
     
     @IBAction func showPassword(_ sender: Any) {
